@@ -1,0 +1,12 @@
+version: '2'
+services:
+  job-db:
+    image: postgres
+    container_name: manage-annonce-db
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+
